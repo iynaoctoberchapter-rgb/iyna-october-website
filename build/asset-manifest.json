@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1930657.css",
+    "main.js": "/static/js/main.73bf13cb.js",
+    "static/js/453.826b6155.chunk.js": "/static/js/453.826b6155.chunk.js",
+    "static/media/hero-back.png": "/static/media/hero-back.0e4239893dffa01e4dd3.png",
+    "static/media/brain blitz logo.jpg": "/static/media/brain blitz logo.f900e6e140c386ab61ee.jpg",
+    "static/media/hero-img.jpg": "/static/media/hero-img.11f29e77f3a4d2d468ef.jpg",
+    "static/media/issue_1_cropped.jpg": "/static/media/issue_1_cropped.98f3a74e3f88e1804ba4.jpg",
+    "index.html": "/index.html",
+    "main.c1930657.css.map": "/static/css/main.c1930657.css.map",
+    "main.73bf13cb.js.map": "/static/js/main.73bf13cb.js.map",
+    "453.826b6155.chunk.js.map": "/static/js/453.826b6155.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1930657.css",
+    "static/js/main.73bf13cb.js"
+  ]
+}
