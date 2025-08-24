@@ -1,5 +1,10 @@
 import { NavLink } from "react-router";
 import brainBlitzLogo from '../../images/brain blitz logo.jpg'; // Import the image
+import JanaAhmed from '../../images/jana-ahmed.jpg'; // Import the image
+import AbdallahRoshdy from '../../images/abdallah-roshdy.jpg'; // Import the image
+import EyadAshraf from '../../images/eyad-ashraf.jpg'; // Import the image
+
+
 
 function BodyComponent() {
   return (
@@ -78,7 +83,64 @@ function BodyComponent() {
                   <NavLink to="/Contact">Get in touch <i className="fa-solid fa-arrow-up-right-from-square"></i></NavLink>
                </div>
             </div>
+            
             <hr className="separate" />
+            <br />
+                <div className="temate-container">
+                  
+        <div className="section-title">
+            <h1>Our Amazing Team</h1>
+            <p>Meet the talented professionals who make everything possible</p>
+        </div>
+        
+        <div className="team-container">
+            <div className="team-member">
+                <div className="member-img">
+                    <img src={AbdallahRoshdy} alt="Team Member" />
+                </div>
+                <div className="member-info">
+                    <h3>Abdallah Roshdy</h3>
+                    <span>President</span>
+                    <div className="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61560271762484"><i className="fab fa-facebook"></i></a>
+                        <a href="mailto:abdallah.roshdy1023093@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="team-member">
+                <div className="member-img">
+                    <img src={JanaAhmed} alt="Team Member" />
+                </div>
+                <div className="member-info">
+                    <h3>Jana Ahmed</h3>
+                    <span>Vice-President</span>
+                    <div className="social-links">
+                        <a href="https://www.facebook.com/share/176nbYTSUC/"><i className="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_jana_ahmed_26?igsh=MWRuMWRrOWp6bGpwbw=="><i className="fab fa-instagram"></i></a>
+                        <a href="mailto:janaahmedrt@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="team-member">
+                <div className="member-img">
+                    <img src={EyadAshraf} alt="Team Member" />
+                </div>
+                <div className="member-info">
+                    <h3>Eyad Ashraf</h3>
+                    <span>Web Developer</span>
+                    <div className="social-links">
+                        <a href="https://www.facebook.com/eyad.mahran.967?mibextid=kFxxJD"><i className="fab fa-facebook"></i></a>
+                        <a href="mailto:eyad6ashraf@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+            <hr className="separate" />
+
             <div className="row">
                <div className="right left-last">
                  <h2>Our Team in numbers</h2>
