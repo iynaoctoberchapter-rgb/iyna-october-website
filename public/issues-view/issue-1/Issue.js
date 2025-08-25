@@ -131,7 +131,7 @@ $(function () {
   
     $(".copy-section-link").on("click", function () {
       const sectionHref = $(this).attr("section-href").split(".");
-      const url = `https://www.iyna-oct.site/issue-1#articles?article=${parseInt(sectionHref[1]) - 1}`;
+      const url = `https://www.iyna-oct.com/issues-view/issue-1#articles?article=${parseInt(sectionHref[1]) - 1}`;
       
       navigator.clipboard.writeText(url).then(() => {
         const toast = new bootstrap.Toast(document.getElementById("copied-toast"));
@@ -176,4 +176,5 @@ $(function () {
            rect.left >= 0 && 
            rect.bottom >= (window.innerHeight - window.innerHeight / 2 || document.documentElement.clientHeight - document.documentElement.clientHeight / 2) && 
            rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+
   }
