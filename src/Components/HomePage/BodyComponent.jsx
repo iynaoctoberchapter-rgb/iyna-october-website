@@ -34,6 +34,7 @@ function BodyComponent() {
       social: [
         { icon: "fab fa-facebook", link: "https://www.facebook.com/share/176nbYTSUC/" },
         { icon: "fab fa-instagram", link: "https://www.instagram.com/_jana_ahmed_26?igsh=MWRuMWRrOWp6bGpwbw==" },
+        { icon: "fab fa-linkedin", link: "https://www.linkedin.com/in/jana-a-7ba831327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
         { icon: "fa-solid fa-envelope-open-text", link: "mailto:janaahmedrt@gmail.com" }
       ]
     },
@@ -44,6 +45,7 @@ function BodyComponent() {
       image: EyadAshraf,
       social: [
         { icon: "fab fa-facebook", link: "https://www.facebook.com/eyad.mahran.967?mibextid=kFxxJD" },
+        { icon: "fab fa-github", link: "https://github.com/eyadwebdeveloper" },
         { icon: "fa-solid fa-envelope-open-text", link: "mailto:eyad6ashraf@gmail.com" }
       ]
     }
@@ -78,8 +80,10 @@ function BodyComponent() {
       role: "Chapter Director",
       image: MomenAshraf,
       social: [
-        { icon: "fab fa-linkedin", link: "#" },
-        { icon: "fa-solid fa-envelope-open-text", link: "#" }
+        { icon: "fab fa-facebook", link: "https://www.facebook.com/momen.ashraf.3726?mibextid=kFxxJD" },
+        { icon: "fab fa-instagram", link: "https://www.instagram.com/momen4653?igsh=eDJibjBkN3Rkcjd5" },
+        { icon: "fab fa-linkedin", link: "www.linkedin.com/in/momen-ashraf-fouad" },
+        { icon: "fa-solid fa-envelope-open-text", link: "mailto:momen.ashraf442006@gmail.com" }
       ]
     },
     {
@@ -88,8 +92,10 @@ function BodyComponent() {
       role: "Chapter Director",
       image: YoussefSamy,
       social: [
-        { icon: "fab fa-linkedin", link: "#" },
-        { icon: "fa-solid fa-envelope-open-text", link: "#" }
+        { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100071909186681&mibextid=kFxxJD" },
+        { icon: "fab fa-linkedin", link: "https://LinkedIn.com/in/youssef-samy-49725b374/" },
+        { icon: "fab fa-instagram", link: "https://www.instagram.com/ywsfsmylrby?igsh=bXpkeHppMDFrMDU0" },
+        { icon: "fa-solid fa-envelope-open-text", link: "mailto:youssef.samy1817@gmail.com" }
       ]
     }
   ];
