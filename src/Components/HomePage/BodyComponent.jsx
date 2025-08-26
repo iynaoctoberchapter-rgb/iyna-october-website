@@ -1,12 +1,99 @@
+import { useState } from "react";
 import { NavLink } from "react-router";
-import brainBlitzLogo from '../../images/brain blitz logo.jpg'; // Import the image
-import JanaAhmed from '../../images/jana-ahmed.jpg'; // Import the image
-import AbdallahRoshdy from '../../images/abdallah-roshdy.jpg'; // Import the image
-import EyadAshraf from '../../images/eyad-ashraf.jpg'; // Import the image
+import brainBlitzLogo from '../../images/brain blitz logo.jpg';
+import JanaAhmed from '../../images/jana-ahmed.jpg';
+import AbdallahRoshdy from '../../images/abdallah-roshdy.jpg';
+import EyadAshraf from '../../images/eyad-ashraf.jpg';
+import YoussefSamy from '../../images/yousef-samy.png';
+import Mashour from '../../images/mashour.png';
+import OmarAmmar from '../../images/omar-ammar.png';
+import MomenAshraf from '../../images/momen-ashraf.png';
 
 
 
 function BodyComponent() {
+  const [activeTeam, setActiveTeam] = useState("executive");
+
+  // Executive team data
+  const executiveTeam = [
+    {
+      id: 1,
+      name: "Abdallah Roshdy",
+      role: "President",
+      image: AbdallahRoshdy,
+      social: [
+        { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=61560271762484" },
+        { icon: "fa-solid fa-envelope-open-text", link: "mailto:abdallah.roshdy1023093@gmail.com" }
+      ]
+    },
+    {
+      id: 2,
+      name: "Jana Ahmed",
+      role: "Vice-President",
+      image: JanaAhmed,
+      social: [
+        { icon: "fab fa-facebook", link: "https://www.facebook.com/share/176nbYTSUC/" },
+        { icon: "fab fa-instagram", link: "https://www.instagram.com/_jana_ahmed_26?igsh=MWRuMWRrOWp6bGpwbw==" },
+        { icon: "fa-solid fa-envelope-open-text", link: "mailto:janaahmedrt@gmail.com" }
+      ]
+    },
+    {
+      id: 3,
+      name: "Eyad Ashraf",
+      role: "Web Developer",
+      image: EyadAshraf,
+      social: [
+        { icon: "fab fa-facebook", link: "https://www.facebook.com/eyad.mahran.967?mibextid=kFxxJD" },
+        { icon: "fa-solid fa-envelope-open-text", link: "mailto:eyad6ashraf@gmail.com" }
+      ]
+    }
+  ];
+
+  const advisoryTeam = [
+    {
+      id: 1,
+      name: "Mohamed Mashour",
+      role: "Former President",
+      image: Mashour,
+      social: [
+         { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
+        { icon: "fab fa-instagram", link: "https://www.instagram.com/mohamedmashhour1/" },
+        { icon: "fa-solid fa-envelope-open-text", link: "#" }
+      ]
+    },
+    {
+      id: 2,
+      name: "Omaar Ammar",
+      role: "Chapter Advisor",
+      image: OmarAmmar,
+      social: [
+         { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
+        { icon: "fab fa-instagram", link: "https://www.instagram.com/mohamedmashhour1/" },
+        { icon: "fa-solid fa-envelope-open-text", link: "#" }
+      ]
+    },
+    {
+      id: 3,
+      name: "Momen Ashraf",
+      role: "Chapter Director",
+      image: MomenAshraf,
+      social: [
+        { icon: "fab fa-linkedin", link: "#" },
+        { icon: "fa-solid fa-envelope-open-text", link: "#" }
+      ]
+    },
+    {
+      id: 4,
+      name: "Youssef Samy",
+      role: "Chapter Director",
+      image: YoussefSamy,
+      social: [
+        { icon: "fab fa-linkedin", link: "#" },
+        { icon: "fa-solid fa-envelope-open-text", link: "#" }
+      ]
+    }
+  ];
+
   return (
    <section className="body">
       <div className="body-content">
@@ -86,58 +173,52 @@ function BodyComponent() {
             
             <hr className="separate" />
             <br />
-                <div className="temate-container">
-                  
-        <div className="section-title">
-            <h1>Our Amazing Team</h1>
-            <p>Meet the talented professionals who make everything possible</p>
-        </div>
-        
-        <div className="team-container">
-            <div className="team-member">
-                <div className="member-img">
-                    <img src={AbdallahRoshdy} alt="Team Member" />
-                </div>
-                <div className="member-info">
-                    <h3>Abdallah Roshdy</h3>
-                    <span>President</span>
-                    <div className="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61560271762484"><i className="fab fa-facebook"></i></a>
-                        <a href="mailto:abdallah.roshdy1023093@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
-                    </div>
-                </div>
+            <div className="row">
+          <div className="right left-last">
+            <h2>Our Amazing Team</h2>
+            
+            {/* Team Type Toggle */}
+            <div className="team-toggle-container">
+              <div className="team-toggle">
+                <button 
+                  className={`toggle-btn ${activeTeam === "executive" ? "active" : ""}`}
+                  onClick={() => setActiveTeam("executive")}
+                >
+                  Executive Team
+                </button>
+                <button 
+                  className={`toggle-btn ${activeTeam === "advisory" ? "active" : ""}`}
+                  onClick={() => setActiveTeam("advisory")}
+                >
+                  Advisory Board
+                </button>
+              </div>
             </div>
             
-            <div className="team-member">
-                <div className="member-img">
-                    <img src={JanaAhmed} alt="Team Member" />
-                </div>
-                <div className="member-info">
-                    <h3>Jana Ahmed</h3>
-                    <span>Vice-President</span>
+            {/* Team Members Grid */}
+            <div className="team-grid">
+              {(activeTeam === "executive" ? executiveTeam : advisoryTeam).map((member) => (
+                <div key={member.id} className="team-member-card">
+                  <div className="member-img">
+                    <img src={member.image} alt={member.name} />
+                    <div className="member-overlay"></div>
+                  </div>
+                  <div className="member-info">
+                    <h3>{member.name}</h3>
+                    <span>{member.role}</span>
                     <div className="social-links">
-                        <a href="https://www.facebook.com/share/176nbYTSUC/"><i className="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/_jana_ahmed_26?igsh=MWRuMWRrOWp6bGpwbw=="><i className="fab fa-instagram"></i></a>
-                        <a href="mailto:janaahmedrt@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
+                      {member.social.map((social, index) => (
+                        <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
+                          <i className={social.icon}></i>
+                        </a>
+                      ))}
                     </div>
+                  </div>
                 </div>
+              ))}
             </div>
-            
-            <div className="team-member">
-                <div className="member-img">
-                    <img src={EyadAshraf} alt="Team Member" />
-                </div>
-                <div className="member-info">
-                    <h3>Eyad Ashraf</h3>
-                    <span>Web Developer</span>
-                    <div className="social-links">
-                        <a href="https://www.facebook.com/eyad.mahran.967?mibextid=kFxxJD"><i className="fab fa-facebook"></i></a>
-                        <a href="mailto:eyad6ashraf@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
     <br /><br />
             <hr className="separate" />
 
@@ -170,3 +251,4 @@ function BodyComponent() {
 }
 
 export default BodyComponent;
+
