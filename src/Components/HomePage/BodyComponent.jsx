@@ -23,6 +23,7 @@ function BodyComponent() {
       image: AbdallahRoshdy,
       social: [
         { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=61560271762484" },
+        { icon: "fab fa-linkedin", link: "https://www.linkedin.com/in/abdallah-roshdy-elsayed-62149b33b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
         { icon: "fa-solid fa-envelope-open-text", link: "mailto:abdallah.roshdy1023093@gmail.com" }
       ]
     },
@@ -58,9 +59,10 @@ function BodyComponent() {
       role: "Former President",
       image: Mashour,
       social: [
-         { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
+        { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
         { icon: "fab fa-instagram", link: "https://www.instagram.com/mohamedmashhour1/" },
-        { icon: "fa-solid fa-envelope-open-text", link: "#" }
+        { icon: "fab fa-linkedin", link: "https://www.linkedin.com/in/mohammadmoussa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+        { icon: "fa-solid fa-envelope-open-text", link: "mailto:mohamedi.mashhour1@gmail.com" }
       ]
     },
     {
@@ -69,9 +71,9 @@ function BodyComponent() {
       role: "Chapter Advisor",
       image: OmarAmmar,
       social: [
-         { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
+        { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
         { icon: "fab fa-instagram", link: "https://www.instagram.com/mohamedmashhour1/" },
-        { icon: "fa-solid fa-envelope-open-text", link: "#" }
+        { icon: "fab fa-linkedin", link: "https://www.linkedin.com/in/omar-ammar-a12809239/" }
       ]
     },
     {
