@@ -68,7 +68,7 @@ function BodyComponent() {
     {
       id: 2,
       name: "Omaar Ammar",
-      role: "Chapter Advisor",
+      role: "Chapter Director",
       image: OmarAmmar,
       social: [
         { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
@@ -91,7 +91,7 @@ function BodyComponent() {
     {
       id: 4,
       name: "Youssef Samy",
-      role: "Chapter Director",
+      role: "Chapter Advisor",
       image: YoussefSamy,
       social: [
         { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100071909186681&mibextid=kFxxJD" },
@@ -259,4 +259,5 @@ function BodyComponent() {
 }
 
 export default BodyComponent;
+
 
