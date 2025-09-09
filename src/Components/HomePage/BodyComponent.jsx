@@ -67,17 +67,6 @@ function BodyComponent() {
     },
     {
       id: 2,
-      name: "Omar Ammar",
-      role: "Chapter Advisor",
-      image: OmarAmmar,
-      social: [
-        { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
-        { icon: "fab fa-instagram", link: "https://www.instagram.com/mohamedmashhour1/" },
-        { icon: "fab fa-linkedin", link: "https://www.linkedin.com/in/omar-ammar-a12809239/" }
-      ]
-    },
-    {
-      id: 3,
       name: "Momen Ashraf",
       role: "Chapter Director",
       image: MomenAshraf,
@@ -86,6 +75,17 @@ function BodyComponent() {
         { icon: "fab fa-instagram", link: "https://www.instagram.com/momen4653?igsh=eDJibjBkN3Rkcjd5" },
         { icon: "fab fa-linkedin", link: "www.linkedin.com/in/momen-ashraf-fouad" },
         { icon: "fa-solid fa-envelope-open-text", link: "mailto:momen.ashraf442006@gmail.com" }
+      ]
+    },
+    {
+      id: 3,
+      name: "Omar Ammar",
+      role: "Chapter Advisor",
+      image: OmarAmmar,
+      social: [
+        { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
+        { icon: "fab fa-instagram", link: "https://www.instagram.com/mohamedmashhour1/" },
+        { icon: "fab fa-linkedin", link: "https://www.linkedin.com/in/omar-ammar-a12809239/" }
       ]
     },
     {
@@ -259,6 +259,7 @@ function BodyComponent() {
 }
 
 export default BodyComponent;
+
 
 
 
