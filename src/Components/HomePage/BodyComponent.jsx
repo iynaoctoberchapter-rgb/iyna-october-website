@@ -56,7 +56,7 @@ function BodyComponent() {
     {
       id: 1,
       name: "Mohamed Mashour",
-      role: "Former President",
+      role: "Chapter Director",
       image: Mashour,
       social: [
         { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
@@ -67,8 +67,8 @@ function BodyComponent() {
     },
     {
       id: 2,
-      name: "Omaar Ammar",
-      role: "Chapter Director",
+      name: "Omar Ammar",
+      role: "Chapter Advisor",
       image: OmarAmmar,
       social: [
         { icon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100008599171572" },
@@ -259,5 +259,6 @@ function BodyComponent() {
 }
 
 export default BodyComponent;
+
 
 
